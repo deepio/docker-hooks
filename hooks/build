@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "=> Building Rodan"
+docker build --build-arg BRANCHES=develop --tag d33pi0/docker-hooks:nightly .

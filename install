@@ -1,0 +1,7 @@
+#!/bin/sh
+set -o errexit # Exit immediately if a command exits with a non-zero status.
+set -o nounset # Treat unset variables as an error when substituting.
+set -o xtrace # Print commands and their arguments as they are executed.
+
+
+git clone -b $BRANCHES https://github.com/DDMAL/pil-rodan.git
