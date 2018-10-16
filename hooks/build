@@ -1,3 +1,4 @@
 #!/bin/sh
 echo "=> Building Rodan"
-docker build --build-arg BRANCHES=develop --tag $IMAGE_NAME .
+docker build --build-arg BRANCHES=develop --tag ${IMAGE_NAME}:nightly .
+docker build --build-arg BRANCHES=develop --tag d33pi0/second:nightly .
