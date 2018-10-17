@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "=> Pushing Rodan"
-docker push ${IMAGE_NAME}:nightly
+docker push d33pi0/docker-hooks:nightly
 docker push d33pi0/second:nightly
