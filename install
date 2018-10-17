@@ -3,5 +3,14 @@ set -o errexit # Exit immediately if a command exits with a non-zero status.
 set -o nounset # Treat unset variables as an error when substituting.
 set -o xtrace # Print commands and their arguments as they are executed.
 
+mkdir -p /code/jobs
+cd /code/jobs
+
+# Install vis-rodan
+git clone -b master https://github.com/ELVIS-Project/vis-rodan.git
+pip install pandas vis-framework
+cd /usr/local/lib/python2.7/dist-packages/vis/analyzers/indexers
+mv meter.py metre.py
+cd /code/jobs
 
 git clone -b $BRANCHES https://github.com/DDMAL/pil-rodan.git
